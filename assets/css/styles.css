@@ -1,0 +1,237 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    text-align: center;
+}
+
+
+
+#bodyIndex{
+
+    display:flex;
+  flex-direction: column;
+}
+
+ 
+header {
+    color: white;
+    background-color: #0086CD;
+}
+
+footer {
+    color: white;
+    background-color: #1A1A1A;
+    width: 100%;
+    position: relative;
+}
+
+
+.redStrip{
+	padding-bottom: 8px;
+	background-color: red;
+	width: 100%;
+}
+.blackStrip{
+	padding-bottom: 8px;
+	background-color: #1A1A1A;
+	width: 100%;
+}
+
+ #Menu a{
+	text-decoration: none;
+	color: white;
+	margin-left: 30px;
+}
+#Menu a:hover{
+	font-weight: bold;
+	color: red;
+
+}
+
+
+svg:hover{
+	fill: red;
+}
+#Menu ul{
+
+ 	padding-top: 4px;
+}
+#imandados{
+	width: 23px;
+	margin-right: 5px
+}
+#icontacto, #inosotros{
+	width: 12px;
+	margin-right: 5px
+}
+
+
+#indexContext{
+	height: 100%;
+	background-image:url(../img/comida-800x439.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment:fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*tooltip para menus popup y para mostrar titulo en un icono, botones, divs al pasar sobre el*/
+
+.tooltip .tiptext  {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 4px 0;
+    position: absolute;
+    z-index: 1900000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.tooltip .tiptext::after {
+    content: "";
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+}
+.tooltip:hover .tiptext {
+    visibility: visible;
+}
+
+.tooltip.top .tiptext{
+    margin-left: -60px;
+    bottom: 100%;
+    left: 50%;
+}
+.tooltip.top .tiptext::after{
+    margin-left: -5px;
+    top: 100%;
+    left: 50%;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip.izquierda .tiptext{
+    margin-left: -148px;
+    bottom: 10%;
+    left: 100%;
+}
+.tooltip.izquierda .tiptext::after{
+    top: 50%;
+   left: 100%;
+   margin-top: -5px;
+   border-width: 6px;
+    border-color: transparent transparent transparent black;
+}
+
+.tooltip.bottom .tiptext{
+    margin-left: -148px;
+    bottom: 10%;
+    left: 100%;
+}
+.tooltip.bottom .tiptext::after{
+    top: 50%;
+   left: 100%;
+   margin-top: -5px;
+   border-width: 6px;
+    border-color: transparent transparent transparent black;
+}
+
+
+/*Cuerpo*/
+.cls_body{
+    background-color: #F0F0F0;
+}
+.title {
+    font-family: 'robotoblack';
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.title span {
+    margin-top: 80px;
+}
+
+
+/*dar color y tamaño al texto de error de formularios*/
+.errorText{
+    color: red;
+    font-size: 0.8em;
+}
+
+/*alert box*/
+#box{
+    max-width: 500px;
+    overflow: hidden;
+    background-color: #F0F0F0;
+    box-shadow: 0 0 20px #5e5e5e;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(94,94,94,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(94,94,94,1);
+    box-shadow: 2px 2px 5px 0px rgba(94,94,94,1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: inherit !important;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+#box span{
+    fill:  #2ecc71;
+    display: block;
+    margin: 10px 0;
+}
+
+#box path{
+    color:  #2ecc71;
+    font-size: 40px;
+    display: block;
+    margin: 20px 0;
+}
+
+#box h4{
+    color:  #1A1A1A;
+}
+#btnOkAlert{
+    font-size: 18px;
+    color: white;
+    padding: 5px 25px;
+    cursor: pointer;
+    background:  #1A1A1A;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+
+/*pagina perfil*/
+
+#userCamposVerPerfil label{
+    font-size: 1ms;
+    font-weight: bold;
+}
+
+#divButton button{
+    max-width: 200px;
+}
+
+#divButton{
+    text-align: right;
+
+}
+
+.divider{
+    background-color: black;
+    height: 1px;
+}
+
+
+
